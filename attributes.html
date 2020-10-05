@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .error{
+            border:1px solid red;
+            color:red;
+            padding:10px;
+
+        }
+        .success{
+            border:1px solid green;
+            color:green;
+            padding:10px;
+
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="https://www.google.com/">click here</a>
+    <script>
+        var a1=document.querySelector('a');
+        console.log(a1.getAttribute('href'));
+        a1.setAttribute('href','https://www.linkedin.com/');
+        console.log(a1.getAttribute('href'));
+
+
+        // var para1=document.querySelector('.test');
+        // console.log(para1.classList);
+        var para1=document.querySelectorAll('p');
+        // para1.forEach(function(h){
+        //     h.classList.add('error');
+        // })
+    para1[3].setAttribute('style','color:red');
+
+    </script>
+</body>
+</html>
